@@ -1,28 +1,150 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-		<meta name="author" content="Céline Lötscher">
-		<meta name="copyright" content="Céline Lötscher">
-		<meta name="language" content="English">
-		<meta name="revisit-after" content="7 days">
-		<meta name="robots" content="index, nofollow, noimageindex">
-		<meta name="googlebot" content="index, nofollow, noimageindex">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/png" href="assets/asset_favicon.png">
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-		<meta name="title" content="Céline Lötscher">
-		<meta name="description" content="Swiss based Designer - coming soon">
-		<meta name="keywords" content="celineloetscher,celineloetscher.ch,swiss Designer">
+        <meta name="author" content="Tim Ott">
+        <meta name="copyright" content="Céline Lötscher">
+        <meta name="language" content="English">
+        <meta name="revisit-after" content="7 days">
+        <meta name="robots" content="index, nofollow, noimageindex">
+        <meta name="googlebot" content="index, nofollow, noimageindex">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="assets/asset_favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ifg3csm.css">
+        <meta name="title" content="Céline Lötscher">
+        <meta name="description" content="swiss based designer">
+        <meta name="keywords" content="Céline, Lötscher, Céline Lötscher">
+        <meta name="google-site-verification" content="Hd_OXurhCQoKTOpxqtC5OQwjuEqoWRkHfddRVz1dvDQ">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="swiss based designer"/>
+        <meta property="og:url" content="https://celineloetscher.ch">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image" content="https://celineloetscher.ch/assets/assets/asset_info_wide.jpg">
+        <meta property="og:image:secure_url" content="https://celineloetscher.ch/assets/assets/asset_info_wide.jpg">
+        <meta property="og:image:width" content="1400">
+        <meta property="og:image:height" content="1000">
+        <meta property="og:title" content="Céline Lötscher">
+        <meta property="og:description" content="swiss based designer">
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://celineloetscher.ch">
+        <meta property="twitter:title" content="Céline Lötscher">
+        <meta property="twitter:description" content="swiss based designer">
+        <meta property="twitter:image" content="https://celineloetscher.ch/assets/assets/asset_info_wide.jpg">
         <title>
             Céline Lötscher
         </title>
     </head>
-    <body>
-        <div class="centered">
-            <i>celineloetscher.ch</i>
-            <br>
-            coming soon
+    <body oncontextmenu="return false" style="overflow-x: hidden;">
+        <div class="splitHalfA">
+            <div class="info centered">
+                <div class="fontL italic transformToLeft">
+                    CÉLINE
+                </div>
+                <div class="fontL italic transformToRight">
+                    LÖTSCHER
+                </div>
+                <br>
+                <div class="fontS">
+                    I laid the foundation for my creative journey by studying photography. Through my prior experience  a model, I gained insights into the creative and visual world, which further
+fueled my passion for graphic design. Self-study and practical experience in various
+companies deepened my skills.<br><br>
+Painting, which has accompanied me since childhood, is not just a hobby, but an essential
+part of my life. This artistic passion flows seamlessly into my work and I combine my
+experience in photography, graphic design and painting to create a multi-layered
+understanding of visual aesthetics and expression.
+                    <br>
+                    <br>
+                    <a class="bold underline" onclick="menuOpen()">SEE WORK</a>
+                    <br>
+                    <script>
+                        function menuOpen() {
+                            document.getElementsByTagName('*')[0].style.overflow = 'hidden';
+                            document.getElementsByClassName('splitHalfA')[0].style.display = 'none';
+                            document.getElementsByClassName('splitHalfB')[0].style.display = 'none';
+                            document.getElementsByClassName('menuLeft')[0].style.display = 'block';
+                            document.getElementsByClassName('menuRight')[0].style.display = 'block';
+                            document.getElementsByClassName('menuLeft')[0].style.pointerEvents = 'all'
+                            document.getElementsByClassName('menuRight')[0].style.pointerEvents = 'all'
+                        }
+                        function menuClose() {
+                            document.getElementsByTagName('*')[0].style.overflow = 'visible';
+                            document.getElementsByClassName('menuLeft')[0].style.display = 'none';
+                            document.getElementsByClassName('menuRight')[0].style.display = 'none';
+                            document.getElementsByClassName('splitHalfA')[0].style.display = 'block';
+                            document.getElementsByClassName('splitHalfB')[0].style.display = 'block';
+                            document.getElementsByClassName('menuLeft')[0].style.pointerEvents = 'none';
+                            document.getElementsByClassName('menuRight')[0].style.pointerEvents = 'none';
+                        }
+                    </script>
+                    <br>
+                    <a class="fontS underline" href="mailto:info@celineloetscher.ch">info@celineloetscher.ch</a><br>
+                    <a class="fontS underline" href="https://www.instagram.com/celinelphotography/">@celinelphotography</a>
+                </div>
+            </div>
+        </div>
+        <div class="splitHalfB">
+            <img id="infoImg" src="assets/asset_info.jpg" alt="">
+        </div>
+        <div class="menuLeft">
+            <div class="menuItem" id="asset_menu_vespariders">
+                <a class="centered menuCaption" href="vespariders/">
+                    <div class="fontS centered colorWhite">
+                        vespa riders
+                    </div>
+                </a>
+            </div>
+            <div class="menuItem" id="asset_menu_furka">
+                <a class="centered menuCaption" href="furka/">
+                    <div class="fontS centered colorWhite">
+                        furka
+                    </div>
+                </a>
+            </div>
+            <div class="menuItem" id="asset_menu_whippedcream">
+                <a class="centered menuCaption" href="whippedcream/">
+                    <div class="fontS centered colorWhite">
+                        whipped cream
+                    </div>
+                </a>
+            </div>
+            <div class="menuItem" id="asset_menu_cablecar">
+                <a class="centered menuCaption" href="cablecar/">
+                    <div class="fontS centered colorWhite">
+                        cablecar
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="menuRight">
+            <div class="menuItem" id="asset_menu_concrete">
+                <a class="centered menuCaption" href="concrete/">
+                    <div class="fontS centered colorWhite">
+                        concrete
+                    </div>
+                </a>
+            </div>
+            <div class="menuItem" id="asset_menu_cupcake">
+                <a class="centered menuCaption" href="cupcake/">
+                    <div class="fontS centered colorWhite">
+                        cupcake
+                    </div>
+                </a>
+            </div>
+            <div class="menuItem" id="asset_menu_giftcard">
+                <a class="centered menuCaption" href="giftcard/">
+                    <div class="fontS centered colorWhite">
+                        giftcard
+                    </div>
+                </a>
+            </div>
+            <div class="menuItem" id="asset_menu_icons">
+                <a class="centered menuCaption" href="icons/">
+                    <div class="fontS centered colorWhite">
+                        icons
+                    </div>
+                </a>
+            </div>
         </div>
     </body>
 </html>
