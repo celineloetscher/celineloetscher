@@ -188,6 +188,9 @@ a:hover {
         max-width: calc(var(--viewWidth) - 4rem);
         margin: 2rem;
     }
+    #maxContent {
+        width: calc(100vw - 4rem) !important;
+    }
 }
 
 /* tablet and desktop */
@@ -648,12 +651,12 @@ a:hover {
 }
 #asset_menu_whippedcream {
     background-image: url("../assets/asset_menu_whippedcream.jpg");
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     width: calc(calc(100vh / 5) * 3);
 }
 
-/* DEBUG *//*
+/* DEBUG */
 
 * {
     background-color: rgba(255, 0, 0, .2) !important;
