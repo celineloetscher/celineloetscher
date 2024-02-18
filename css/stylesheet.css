@@ -146,7 +146,7 @@ a:hover {
 
 /* mobile */
 
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 767px) {
     :root {
         --gridWidth: 16;
         --viewWidth: 100vw;
@@ -191,11 +191,15 @@ a:hover {
     #maxContent {
         width: calc(100vw - 4rem) !important;
     }
+    #toggleIndent {
+        display: inline;
+        text-indent: 0;
+    }
 }
 
 /* tablet and desktop */
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 768px) {
     .splitHalfA, .splitHalfB {
         width: calc(var(--viewWidth) / 2);
         height: 100vh;
@@ -237,7 +241,7 @@ a:hover {
 
 /* tablet */
 
-@media only screen and (min-width: 48rem) and (max-width: 72.5rem) {
+@media only screen and (min-width: 768px) and (max-width: 1160px) {
     :root {
         --gridWidth: 46;
         --viewWidth: 100vw;
@@ -264,11 +268,14 @@ a:hover {
     .info {
         width: calc(calc(var(--viewWidth) / var(--gridWidth)) * 15.1);
     }
+    #toggleIndent {
+        text-indent: calc(calc(var(--viewWidth) / var(--gridWidth)) * 1.5);
+    }
 }
 
 /* desktop */
 
-@media only screen and (min-width: 72.5rem) {
+@media only screen and (min-width: 1160px) {
     :root {
         --gridWidth: 44;
         --viewWidth: 100vw;
@@ -295,11 +302,14 @@ a:hover {
     .info {
         width: calc(calc(var(--viewWidth) / var(--gridWidth)) * 10.1);
     }
+    #toggleIndent {
+        text-indent: calc(calc(var(--viewWidth) / var(--gridWidth)) * 2);
+    }
 }
 
 /* desktop ultrawide */
 
-@media only screen and (min-width: 72.5rem) and (min-aspect-ratio: 21/9) {
+@media only screen and (min-width: 1160px) and (min-aspect-ratio: 21/9) {
     :root {
         --gridWidth: 44;
         --viewWidth: 50vw;
@@ -360,11 +370,14 @@ a:hover {
         max-width: calc(25vw - 8rem);
         max-height: calc(100vh - 8rem);
     }
+    #toggleIndent {
+        text-indent: calc(calc(var(--viewWidth) / var(--gridWidth)) * 1.5);
+    }
 }
 
 /* IMG SOURCE */
 
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 767px) {
     #asset_cablecar_000 {
         background-image: url("../assets/asset_cablecar_000_mobile.jpg");
         background-position: center;
@@ -404,7 +417,7 @@ a:hover {
         background-size: cover;
     }
 }
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 768px) {
     #asset_cablecar_000 {
         background-image: url("../assets/asset_cablecar_000.jpg");
         background-position: center;
@@ -596,7 +609,7 @@ a:hover {
     height: 100vh;
     width: 100vw;
 }
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 767px) {
     #asset_menu_cablecar, #asset_menu_furka, #asset_menu_vespariders, #asset_menu_whippedcream, #asset_menu_concrete, #asset_menu_cupcake, #asset_menu_giftcard, #asset_menu_icons {
         width: calc(50vw - calc(calc(100vh / 5) * .15)) !important;
     }
