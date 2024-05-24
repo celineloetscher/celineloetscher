@@ -78,12 +78,12 @@ a:hover {
     cursor: pointer;
 }
 .scrollContainer {
-    height: 100dvh; /* dvh instead of vh */
+    height: 100vh;
     overflow-y: auto;
     scroll-snap-type: both mandatory;
 }
 .scrollSection {
-    height: 100dvh; /* dvh instead of vh */
+    height: 100vh;
     scroll-snap-align: start;
 }
 .dscrL, .dscrM, .dscrS {
@@ -96,9 +96,22 @@ a:hover {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
-/* page fadein stuff */
-
+.video {
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#cablecar, #cupcake, #whippedcream {
+    object-fit: cover;
+}
+#cupcake, #whippedcream, #cablecar {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
 .hidden {
     opacity: 0;
 }
@@ -245,7 +258,6 @@ a:hover {
 }
 
 /* img src */
-
 
 #asset_01_concrete_002 {
     background-image: url("../assets/asset_01_concrete_002.jpg") !important;
@@ -656,39 +668,9 @@ a:hover {
     }
 }
 
-/* carousel leftover css *//*
-
-body {
-    counter-reset: item;
-}
-img {
-    display: inline-block;
-}
-
-*/
-
-/* DEBUG *//*
+/*
 
 * {
     background-color: rgba(255, 0, 0, .2);
     outline: 1px dashed black !important;
-}
-
-*/
-
-.video {
-    display: flex;
-    overflow: hidden;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-#cablecar, #cupcake, #whippedcream {
-    object-fit: cover;
-}
-#cupcake, #whippedcream, #cablecar {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
 }
